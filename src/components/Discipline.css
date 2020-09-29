@@ -1,0 +1,5 @@
+.disciplines{
+    grid-area: pages;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+}

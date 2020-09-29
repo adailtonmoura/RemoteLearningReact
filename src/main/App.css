@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "RobotoMono";
+    src: url("../assets/fonts/RobotoMono-Thin.ttf");
+}
+  
+* {
+    box-sizing: border-box;
+    font-family: "RobotoMono", "monospace";
+}
+
+:root{
+    --sidebar-width: 70px;
+}
+
+.app {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: var(--sidebar-width) 1fr;
+    grid-template-rows:
+        1fr;
+    grid-template-areas:
+        "sidebar content";
+    height: 100vh;
+    background-color: #F5F5F5;
+}
+
+.app.sidebar{
+    grid-area: sidebar;
+}

@@ -1,8 +1,15 @@
-import React from 'react'
-import './Card.css'
+import React from "react";
+import "./Card.css";
 
-export default (props) =>
-    <div className='card'>
-        <h1 className="course">{props.name}</h1>
-        <p>{props.teacher}</p>
+export default (props) => (
+  <div className="card">
+    <div className="card-body">
+      <a href="">
+        <h4 className="card-title">
+          {props.name} - {props.id}
+        </h4>
+      </a>
+      <p className="card-text">{props.teacher}</p>
     </div>
+  </div>
+);
