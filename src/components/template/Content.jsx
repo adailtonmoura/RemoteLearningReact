@@ -8,6 +8,6 @@ import Routes from '../../main/Routes'
 export default () =>
 
         <div className="content">
-            <Header title="Disciplinas" />
+            <Header title="Disciplinas"/>
             <Routes />
         </div>

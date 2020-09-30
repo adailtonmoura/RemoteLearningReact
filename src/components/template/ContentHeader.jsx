@@ -1,10 +1,7 @@
-import React from 'react'
-import './ContentHeader.css'
+import React from "react";
+import "./ContentHeader.css";
 
-export default function ContentHeader(props) {
-    return (
-        <header className="header"> 
-            <h1> {props.title} </h1>
-        </header>
-    )
-}
+export default (props) =>
+    <header className="header">
+      <h1> {props.title} </h1>
+    </header>
