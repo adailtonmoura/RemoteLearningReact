@@ -2,8 +2,8 @@ import React from 'react';
 
 import {BrowserRouter ,Route, Switch, Redirect} from 'react-router-dom';
 
-import Disciplines from '../components/Discipline'
-import RemoteClass from '../components/RemoteClass';
+import Disciplines from '../components/disciplines/Discipline'
+import RemoteClass from '../components/remoteclass/RemoteClass';
 
 export default () => 
     <BrowserRouter>

@@ -3,12 +3,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import React from "react";
 
-import Sidebar from "../components/template/Sidebar";
-import Content from "../components/template/Content";
+import Sidebar from "../components/template/Nav";
+import Routes from "./Routes";
 
 export default () => (
   <div className="app">
     <Sidebar />
-    <Content />
+    <Routes />
   </div>
 );

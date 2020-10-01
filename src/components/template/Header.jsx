@@ -1,5 +1,5 @@
 import React from "react";
-import "./ContentHeader.css";
+import "./Header.css";
 
 export default (props) =>
     <header className="header">

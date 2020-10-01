@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-import api from "../services/api";
-import Card from "./CardClasses";
-import Content from "./template/Content"
+import api from "../../services/api";
+import Card from "../CardClasses";
+import Main from "../template/Main";
 import "./RemoteClass.css";
 
 export default class RemoteClass extends Component {
@@ -11,8 +11,8 @@ export default class RemoteClass extends Component {
     discipline: "",
   };
   componentDidMount() {
-    this.loadRemoteClasses();
     this.loadDiscipline();
+    this.loadRemoteClasses();
   }
   loadRemoteClasses = async () => {
     const { id } = this.props.match.params;
@@ -21,22 +21,24 @@ export default class RemoteClass extends Component {
   };
   loadDiscipline = async () => {
     const { id } = this.props.match.params;
-    const response = await api.get(`api/discipline/${id}`)
+    const response = await api.get(`api/discipline/${id}`);
     this.setState({ discipline: response.data.discipline.name });
-  }
+  };
   render() {
     return (
-      <div className="remoteclasses">
-        {this.state.remoteclass.map((remote) => (
-          <Card
-            key={remote.id}
-            data={remote.date}
-            content={remote.content}
-            quantity={remote.quantity}
-            plataform={remote.plataform}
-          />
-        ))}
-      </div>
+      <Main title={this.state.discipline}>
+        <div className="remoteclasses">
+          {this.state.remoteclass.map((remote) => (
+            <Card
+              key={remote.id}
+              data={remote.date}
+              content={remote.content}
+              quantity={remote.quantity}
+              plataform={remote.plataform}
+            />
+          ))}
+        </div>
+      </Main>
     );
   }
 }

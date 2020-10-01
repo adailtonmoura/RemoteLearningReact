@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./SidebarLink.css";
+import "./NavLink.css";
 
 export default (props) => (
   <a href={props.link} style={{ textDecoration: "none" }}>
