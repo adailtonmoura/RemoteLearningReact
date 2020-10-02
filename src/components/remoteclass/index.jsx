@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
 import api from "../../services/api";
-import Card from "../CardClasses";
+import Card from "../card/CardClasses";
 import Main from "../template/Main";
-import "./RemoteClass.css";
+import "./index.css";
 
 export default class RemoteClass extends Component {
   state = {

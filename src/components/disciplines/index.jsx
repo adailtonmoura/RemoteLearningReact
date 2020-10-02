@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import "./Discipline.css";
+import "./index.css";
 
 import api from "../../services/api";
 
 import Main from "../template/Main";
-import Card from "../Card";
+import Card from "../card/Card";
 
 const headerProps = {
   title: "Disciplinas"
