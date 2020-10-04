@@ -21,7 +21,6 @@ export default class Discipline extends Component {
 
   loadDisciplines = async () => {
     const response = await api.get("api/discipline");
-    console.log(response.data.disciplines);
     this.setState({ disciplines: response.data.disciplines });
   };
 
