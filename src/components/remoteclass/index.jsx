@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import api from "../../services/api";
-import Card from "../card/CardClasses";
+import Card from "../card/index";
 import Main from "../template/Main";
 import "./index.css";
 
@@ -29,13 +29,15 @@ export default class RemoteClass extends Component {
       <Main title={this.state.discipline}>
         <div className="remoteclasses">
           {this.state.remoteclass.map((remote) => (
-            <Card
-              key={remote.id}
-              data={remote.date}
-              content={remote.content}
-              quantity={remote.quantity}
-              plataform={remote.plataform}
-            />
+            <Card key={remote.id} cardType="classescard">
+              <p className="card-text">
+                <strong>Assunto: {remote.content}</strong>
+              </p>
+
+              <h4 className="card-title">{remote.data}</h4>
+              <p className="card-text">Quantidade: {remote.quantity}</p>
+              <p className="card-text">Plataforma: {remote.plataform}</p>
+            </Card>
           ))}
         </div>
       </Main>

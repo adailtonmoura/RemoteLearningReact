@@ -1,0 +1,9 @@
+.disciplinescard{
+    max-width: 22rem;
+    margin: 10px;
+}
+
+.classescard{
+    width: 1fr;
+    margin: 10px;
+}

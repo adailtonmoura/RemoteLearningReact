@@ -4,11 +4,11 @@ import "./index.css";
 import api from "../../services/api";
 
 import Main from "../template/Main";
-import Card from "../card/Card";
+import Card from "../card/index";
 
 const headerProps = {
-  title: "Disciplinas"
-}
+  title: "Disciplinas",
+};
 
 export default class Discipline extends Component {
   state = {
@@ -29,13 +29,13 @@ export default class Discipline extends Component {
       <Main {...headerProps}>
         <div className="disciplines">
           {this.state.disciplines.map((discipline) => (
-            <Card
-              key={discipline.id}
-              id={discipline.id}
-              name={discipline.name}
-              teacher={discipline.teacher}
-              openinghours={discipline.openinghours}
-            />
+            <Card key={discipline.id} cardType="disciplinescard">
+              <a href={`/disciplines/${discipline.id}`}>
+                <h4 className="card-title">{discipline.name}</h4>
+              </a>
+              <p className="card-text">{discipline.teacher}</p>
+              <p className="card-text">{discipline.openinghours}</p>
+            </Card>
           ))}
         </div>
       </Main>
