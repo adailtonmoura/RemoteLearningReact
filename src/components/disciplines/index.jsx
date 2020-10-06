@@ -34,6 +34,7 @@ export default class Discipline extends Component {
               id={discipline.id}
               name={discipline.name}
               teacher={discipline.teacher}
+              openinghours={discipline.openinghours}
             />
           ))}
         </div>

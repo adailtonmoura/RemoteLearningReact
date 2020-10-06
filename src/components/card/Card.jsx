@@ -8,6 +8,7 @@ export default (props) => (
         <h4 className="card-title">{props.name}</h4>
       </a>
       <p className="card-text">{props.teacher}</p>
+      <p className="card-text">{props.openinghours}</p>
     </div>
   </div>
 );
