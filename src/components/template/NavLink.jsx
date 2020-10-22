@@ -1,9 +1,10 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 
 import "./NavLink.css";
 
 export default (props) => (
-  <a href={props.link} style={{ textDecoration: "none" }}>
-    <i className={props.icon} aria-hidden="true"></i>
-  </a>
+  <Link to={props.link} style={{ textDecoration: "none" }}>
+    {props.text}
+  </Link>
 );

@@ -3,10 +3,6 @@ import "./styles.css";
 
 import Main from "../template/Main";
 import api from "../../services/api";
-
-const headerProps = {
-  title: "Home",
-};
 export default class Home extends Component {
   state = {
     remoteclass: [],
@@ -21,7 +17,7 @@ export default class Home extends Component {
   };
   render() {
     return (
-      <Main {...headerProps}>
+      <Main>
         <div className="schedules"></div>
       </Main>
     );

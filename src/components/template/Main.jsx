@@ -1,11 +1,10 @@
-import './Main.css'
-import React from 'react'
-import Header from './Header'
+import "./Main.css";
+import React from "react";
+import Sidebar from "./Nav";
 
-export default props =>
-    <React.Fragment>
-        <Header {...props} />
-        <main className="content container-fluid">
-            {props.children}
-        </main>
-    </React.Fragment>
+export default (props) => (
+  <React.Fragment>
+    <Sidebar/>
+    <main className="content container-fluid">{props.children}</main>
+  </React.Fragment>
+);
