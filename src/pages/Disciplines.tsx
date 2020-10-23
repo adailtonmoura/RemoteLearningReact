@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-import { Link } from "react-router-dom";
-
 import api from "../services/api";
 
 import "../styles/homepage.css";
@@ -17,11 +15,9 @@ export default function Disciplines() {
   const [disciplines, setDisciplines] = useState<Disciplines[]>([]);
 
   useEffect(() => {
-    api.get("/discipline").then((response) => {
-      setDisciplines(response.data.disciplines);
-      console.log(response.data.disciplines);
-      console.log(disciplines);
-    });
+    api
+      .get("/discipline")
+      .then(response => setDisciplines(response.data.disciplines));
   }, []);
   if (!disciplines) {
     return <p>Carregando...</p>;
