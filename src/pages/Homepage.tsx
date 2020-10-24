@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-import "../styles/homepage.css";
+import "../styles/pages/homepage.css";
 
 export default function homepage() {
   return (

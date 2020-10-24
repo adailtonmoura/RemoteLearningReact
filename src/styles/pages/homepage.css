@@ -21,6 +21,12 @@
 
     background: rgb(139, 199, 127);
 }
+.card:hover{
+    height: 200px;
+
+    transition: height 0.5s;
+
+}
 
 .card .card-body a {
     color: white;

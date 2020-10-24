@@ -1,0 +1,79 @@
+.create-activity {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+}
+
+.create-activity .form-create-activity {
+  margin: 1rem;
+  padding: 2.6rem;
+  width: 56rem;
+
+  background: #fff;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.create-activity .form-create-activity h1 {
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+  font-weight: 800;
+  color: rgb(90, 187, 122);
+}
+.create-activity .form-create-activity hr {
+  background: #dfdfdf;
+}
+
+.create-activity .form-create-activity label {
+    font-size:1.4rem;
+  color: rgb(136, 199, 157);
+}
+
+.create-activity .form-create-activity .input-block {
+  display: flex;
+  flex-direction: column;
+
+  margin: 10px 40px 10px 40px;
+}
+.create-activity .form-create-activity .input-block #disciplines {
+  background: rgb(240, 240, 240);
+  outline: none;
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 20px;
+  height: 2.2rem;
+
+  padding-left: 10px;
+}
+
+.create-activity .form-create-activity .input-block input {
+  background: rgb(240, 240, 240);
+  outline: none;
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 20px;
+  padding-left: 10px;
+
+  height: 2rem;
+}
+.create-activity .form-create-activity .input-block textarea {
+  background: rgb(230, 230, 230);
+  outline: none;
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 20px;
+  padding-left: 10px;
+}
+
+.create-activity .form-create-activity .submitButton {
+    height: 2rem;
+    width:10rem;
+    color: white;
+    background: rgb(90, 187, 122);
+    align-self: center;
+    border: 1px solid rgb(206, 206, 206);
+
+  border-radius: 20px;
+
+}
+
