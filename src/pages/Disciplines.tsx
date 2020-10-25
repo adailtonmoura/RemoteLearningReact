@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import api from "../services/api";
 
-import "../styles/pages/homepage.css";
+import "../styles/pages/disciplines.css";
 interface Disciplines {
   id: number;
   name: string;
@@ -26,7 +26,7 @@ export default function Disciplines() {
     <div className="disciplines">
       {disciplines.map((discipline) => {
         return (
-          <div className="card">
+          <div className="disciplines-card">
             <div className="card-header">
               <h2>{discipline.name}</h2>
             </div>
