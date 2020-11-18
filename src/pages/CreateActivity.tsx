@@ -34,7 +34,7 @@ export default function CreateActivity() {
     data.append("disciplines_id", discipline);
     data.append("delivery_date", deliveryDate);
 
-    await api.post("activities/create", data);
+    await api.post("activities", data);
 
     alert("Cadastro Realizado com sucesso");
   }
